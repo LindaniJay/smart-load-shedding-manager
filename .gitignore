@@ -1,0 +1,26 @@
+# Node, Expo, and OS files to ignore
+node_modules/
+.expo/
+.expo-shared/
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+.env
+# OS/project files
+.idea/
+.vscode/
+# Build and output
+/dist/
+/build/
+/web-build/
+# React Native/Expo
+android/
+ios/
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Ignore coverage and test output
+coverage/
