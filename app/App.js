@@ -6,6 +6,7 @@ import DeviceScreen from './screens/DeviceScreen';
 import OnboardingScreen from './screens/OnboardingScreen';
 import AuthScreen from './screens/AuthScreen';
 import AddDeviceScreen from './screens/AddDeviceScreen';
+import LoadsheddingScheduleScreen from './screens/LoadsheddingScheduleScreen';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Device" component={DeviceScreen} />
         <Stack.Screen name="AddDevice" component={AddDeviceScreen} />
+        <Stack.Screen name="LoadsheddingSchedule" component={LoadsheddingScheduleScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

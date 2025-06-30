@@ -58,6 +58,14 @@ export default function HomeScreen({ navigation }) {
           <Text style={styles.logoutText}>Logout</Text>
         </TouchableOpacity>
         <View style={styles.glassCard}>
+          {/* Loadshedding Schedule Button */}
+          <TouchableOpacity
+            style={styles.loadsheddingBtn}
+            onPress={() => navigation.navigate('LoadsheddingSchedule')}
+            activeOpacity={0.85}
+          >
+            <Text style={styles.loadsheddingBtnText}>View Loadshedding Schedule</Text>
+          </TouchableOpacity>
           <Text style={styles.title}>Smart Load Shedding</Text>
           <Text style={styles.subtitle}>Manage your devices efficiently during load shedding.</Text>
           {loading ? (
@@ -104,6 +112,23 @@ export default function HomeScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+  loadsheddingBtn: {
+    backgroundColor: '#007bff',
+    padding: 14,
+    borderRadius: 10,
+    marginBottom: 18,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  loadsheddingBtnText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
   container: {
     flex: 1,
     justifyContent: 'center',
